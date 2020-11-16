@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 02:25-0800\n"
+"POT-Creation-Date: 2020-11-16 03:02-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,7 @@ msgid ""
 msgstr ""
 
 #: cart/templates/cart/detail.html:69
+#: orders/templates/orders/order/create.html:29
 msgid "Total"
 msgstr ""
 
@@ -71,6 +72,8 @@ msgid "Continue shopping"
 msgstr ""
 
 #: cart/templates/cart/detail.html:87
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
 msgid "Checkout"
 msgstr ""
 
@@ -106,6 +109,64 @@ msgstr ""
 msgid "coupons/"
 msgstr ""
 
+#: orders/models.py:10
+msgid "first_name"
+msgstr ""
+
+#: orders/models.py:12
+msgid "last_name"
+msgstr ""
+
+#: orders/models.py:14
+msgid "e-mail"
+msgstr ""
+
+#: orders/models.py:15
+msgid "address"
+msgstr ""
+
+#: orders/models.py:17
+msgid "postal code"
+msgstr ""
+
+#: orders/models.py:19
+msgid "city"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:12
+msgid "Your order"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:22
+#, python-format
+msgid ""
+"\n"
+"            \"%(code)s\" (%(discount)s%% off)\n"
+"          "
+msgstr ""
+
+#: orders/templates/orders/order/create.html:34
+msgid "Place order"
+msgstr ""
+
+#: orders/templates/orders/order/created.html:5
+#: orders/templates/orders/order/created.html:9
+msgid "Thank you"
+msgstr ""
+
+#: orders/templates/orders/order/created.html:10
+#, python-format
+msgid ""
+"\n"
+"    <p>Your order has been successfully completed. Your order number is "
+"<strong>%(order_id)s</strong>.</p>\n"
+"  "
+msgstr ""
+
+#: orders/urls.py:8
+msgid "create/"
+msgstr ""
+
 #: payment/urls.py:8
 msgid "process/"
 msgstr ""
@@ -122,11 +183,15 @@ msgstr ""
 msgid "My shop"
 msgstr ""
 
-#: shop/templates/shop/base.html:20
+#: shop/templates/shop/base.html:19
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/base.html:36
 msgid "Your cart"
 msgstr ""
 
-#: shop/templates/shop/base.html:22
+#: shop/templates/shop/base.html:38
 #, python-format
 msgid ""
 "\n"
@@ -139,7 +204,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: shop/templates/shop/base.html:29
+#: shop/templates/shop/base.html:45
 msgid "Your cart is empty."
 msgstr ""
 

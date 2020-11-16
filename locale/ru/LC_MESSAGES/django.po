@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 02:25-0800\n"
+"POT-Creation-Date: 2020-11-16 03:02-0800\n"
 "PO-Revision-Date: 2020-11-16 08:57+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,7 @@ msgstr ""
 "<td>\"%(code)s\" купон (%(discount)s%% истек)</td>"
 
 #: cart/templates/cart/detail.html:69
+#: orders/templates/orders/order/create.html:29
 msgid "Total"
 msgstr "Сумма"
 
@@ -76,6 +77,8 @@ msgid "Continue shopping"
 msgstr "Продолжить шоппинг"
 
 #: cart/templates/cart/detail.html:87
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
 msgid "Checkout"
 msgstr "Подтвердить заказ"
 
@@ -113,6 +116,76 @@ msgstr "оплата/"
 msgid "coupons/"
 msgstr "купоны/"
 
+#: orders/models.py:10
+msgid "first_name"
+msgstr "имя"
+
+#: orders/models.py:12
+msgid "last_name"
+msgstr "фамилия"
+
+#: orders/models.py:14
+msgid "e-mail"
+msgstr "e-mail"
+
+#: orders/models.py:15
+msgid "address"
+msgstr "адрес"
+
+#: orders/models.py:17
+msgid "postal code"
+msgstr "почтовый индекс"
+
+#: orders/models.py:19
+msgid "city"
+msgstr "город"
+
+#: orders/templates/orders/order/create.html:12
+#, fuzzy
+#| msgid "Your cart"
+msgid "Your order"
+msgstr "Ваш заказ"
+
+#: orders/templates/orders/order/create.html:22
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "            <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+#| "          "
+msgid ""
+"\n"
+"            \"%(code)s\" (%(discount)s%% off)\n"
+"          "
+msgstr ""
+"\n"
+"<td>\"%(code)s\" купон (%(discount)s%% истек)</td>"
+
+#: orders/templates/orders/order/create.html:34
+msgid "Place order"
+msgstr "Подтвердить заказ"
+
+#: orders/templates/orders/order/created.html:5
+#: orders/templates/orders/order/created.html:9
+msgid "Thank you"
+msgstr "Спасибо"
+
+#: orders/templates/orders/order/created.html:10
+#, python-format
+msgid ""
+"\n"
+"    <p>Your order has been successfully completed. Your order number is "
+"<strong>%(order_id)s</strong>.</p>\n"
+"  "
+msgstr ""
+"\n"
+"    <p>Ваша заказ был успешно скомплектован. Номер вашего заказа:  "
+"<strong>%(order_id)s</strong>.</p>\n"
+"  "
+
+#: orders/urls.py:8
+msgid "create/"
+msgstr "создать/"
+
 #: payment/urls.py:8
 msgid "process/"
 msgstr "обработка/"
@@ -129,11 +202,15 @@ msgstr "отмена/"
 msgid "My shop"
 msgstr "Мой магазин"
 
-#: shop/templates/shop/base.html:20
+#: shop/templates/shop/base.html:19
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/base.html:36
 msgid "Your cart"
 msgstr "Ваша корзина"
 
-#: shop/templates/shop/base.html:22
+#: shop/templates/shop/base.html:38
 #, python-format
 msgid ""
 "\n"
@@ -149,10 +226,8 @@ msgstr[0] ""
 msgstr[1] ""
 "\n"
 " %(items)s товары, $%(total)s"
-msgstr[2] ""
-msgstr[3] ""
 
-#: shop/templates/shop/base.html:29
+#: shop/templates/shop/base.html:45
 msgid "Your cart is empty."
 msgstr "Ваша корзина пуста."
 
